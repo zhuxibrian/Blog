@@ -8,6 +8,7 @@ categories: "Git" #文章分類目錄 可以省略
 待完成
 测试1
 测试2
+测试3
 
 ![logo](Github-webhook-vps\2017-03-13_230427.jpg)
 nohup node deploy.js > deploy.log &
