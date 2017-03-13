@@ -10,3 +10,4 @@ categories: "Git" #文章分類目錄 可以省略
 测试2
 
 ![logo](Github-webhook-vps\2017-03-13_230427.jpg)
+nohup node deploy.js > deploy.log &
