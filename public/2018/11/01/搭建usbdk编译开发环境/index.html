@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="ZhuXi&#39;s Blog">
 <meta property="og:description" content="#搭建编译usbdk及libusb环境  搭建编译usbdk环境（win7下）   安装vs2015，安装时注意安装vc++ 及 windows sdk选项 安装windows sdk&amp;#160;&amp;#160; https://go.microsoft.com/fwlink/p/?LinkID=845298安装    wdk10&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-01T09:20:57.200Z">
+<meta property="og:updated_time" content="2018-11-01T09:28:37.182Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建usbdk编译开发环境">
 <meta name="twitter:description" content="#搭建编译usbdk及libusb环境  搭建编译usbdk环境（win7下）   安装vs2015，安装时注意安装vc++ 及 windows sdk选项 安装windows sdk&amp;#160;&amp;#160; https://go.microsoft.com/fwlink/p/?LinkID=845298安装    wdk10&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;">
@@ -362,15 +362,17 @@
 <ol>
 <li>安装vs2015，安装时注意安装vc++ 及 windows sdk选项</li>
 <li><p>安装windows sdk&#160;&#160; <a href="https://go.microsoft.com/fwlink/p/?LinkID=845298" target="_blank" rel="noopener">https://go.microsoft.com/fwlink/p/?LinkID=845298</a><br>安装    wdk10&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <a href="https://go.microsoft.com/fwlink/p/?LinkID=845980" target="_blank" rel="noopener">https://go.microsoft.com/fwlink/p/?LinkID=845980</a></p>
-<ol start="3">
+</li>
 <li><p>下载usbdk，<strong>注意解决方案配置要设置为 win7 Debug_NoSign</strong></p>
 </li>
-<li><p>编译后，进入编译目录 UsbDk_Package，使用<figure class="highlight plain"><figcaption><span>-i```进行驱动安装</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">5. 需要将UsbDkHelper.dll复制到spicy.exe路径下</span><br><span class="line"></span><br><span class="line">* libusb编译选项</span><br></pre></td></tr></table></figure></p>
+<li><p>编译后，进入编译目录 UsbDk_Package，使用UsbDkController.exe -i进行驱动安装</p>
 </li>
+<li>需要将UsbDkHelper.dll复制到spicy.exe路径下</li>
 </ol>
+<ul>
+<li>libusb编译选项<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mingw32-configure –enable-usbdk –enable-debug-log</span><br></pre></td></tr></table></figure>
 </li>
-</ol>
-<p>mingw32-configure –enable-usbdk –enable-debug-log<br><code>`</code></p>
+</ul>
 
       
     </div>
