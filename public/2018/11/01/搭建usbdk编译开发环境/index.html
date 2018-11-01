@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="mingw,spice," />
 
 
 
@@ -87,16 +87,18 @@
 
 
 
-<meta name="description" content="生活不只是眼前的苟且,还有诗和远方">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ZhuXi&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/categories/spice/index.html">
+<meta name="description" content="#搭建编译usbdk及libusb环境  搭建编译usbdk环境（win7下）   安装vs2015，安装时注意安装vc++ 及 windows sdk选项 安装windows sdk&amp;#160;&amp;#160; https://go.microsoft.com/fwlink/p/?LinkID=845298安装    wdk10&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;">
+<meta name="keywords" content="mingw,spice">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建usbdk编译开发环境">
+<meta property="og:url" content="http://yoursite.com/2018/11/01/搭建usbdk编译开发环境/index.html">
 <meta property="og:site_name" content="ZhuXi&#39;s Blog">
-<meta property="og:description" content="生活不只是眼前的苟且,还有诗和远方">
+<meta property="og:description" content="#搭建编译usbdk及libusb环境  搭建编译usbdk环境（win7下）   安装vs2015，安装时注意安装vc++ 及 windows sdk选项 安装windows sdk&amp;#160;&amp;#160; https://go.microsoft.com/fwlink/p/?LinkID=845298安装    wdk10&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-01T09:20:57.200Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ZhuXi&#39;s Blog">
-<meta name="twitter:description" content="生活不只是眼前的苟且,还有诗和远方">
+<meta name="twitter:title" content="搭建usbdk编译开发环境">
+<meta name="twitter:description" content="#搭建编译usbdk及libusb环境  搭建编译usbdk环境（win7下）   安装vs2015，安装时注意安装vc++ 及 windows sdk选项 安装windows sdk&amp;#160;&amp;#160; https://go.microsoft.com/fwlink/p/?LinkID=845298安装    wdk10&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;&amp;#160;">
 
 
 
@@ -124,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/categories/spice/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/11/01/搭建usbdk编译开发环境/"/>
 
 
 
 
 
-  <title> 分类: spice | ZhuXi's Blog </title>
+  <title> 搭建usbdk编译开发环境 | ZhuXi's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -155,7 +157,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -249,103 +251,189 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        spice
-        <small>分类</small>
-      </h2>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/01/搭建usbdk编译开发环境/" itemprop="url">
-              
-                <span itemprop="name">搭建usbdk编译开发环境</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-11-01T17:05:39+08:00"
-              content="2018-11-01" >
-          11-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2018/10/16/windows-下编译spice-gtk-0-30/" itemprop="url">
-              
-                <span itemprop="name">windows 下编译spice-gtk 0.30</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-10-16T08:39:09+08:00"
-              content="2018-10-16" >
-          10-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2018/10/15/windows下编译glib/" itemprop="url">
-              
-                <span itemprop="name">windows下编译glib</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-10-15T16:05:07+08:00"
-              content="2018-10-15" >
-          10-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/01/搭建usbdk编译开发环境/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZhuXi">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/headPic.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZhuXi's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                搭建usbdk编译开发环境
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-01T17:05:39+08:00">
+                2018-11-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/spice/" itemprop="url" rel="index">
+                    <span itemprop="name">spice</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>#搭建编译usbdk及libusb环境</p>
+<ul>
+<li>搭建编译usbdk环境（win7下）</li>
+</ul>
+<ol>
+<li>安装vs2015，安装时注意安装vc++ 及 windows sdk选项</li>
+<li><p>安装windows sdk&#160;&#160; <a href="https://go.microsoft.com/fwlink/p/?LinkID=845298" target="_blank" rel="noopener">https://go.microsoft.com/fwlink/p/?LinkID=845298</a><br>安装    wdk10&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <a href="https://go.microsoft.com/fwlink/p/?LinkID=845980" target="_blank" rel="noopener">https://go.microsoft.com/fwlink/p/?LinkID=845980</a></p>
+<ol start="3">
+<li><p>下载usbdk，<strong>注意解决方案配置要设置为 win7 Debug_NoSign</strong></p>
+</li>
+<li><p>编译后，进入编译目录 UsbDk_Package，使用<figure class="highlight plain"><figcaption><span>-i```进行驱动安装</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">5. 需要将UsbDkHelper.dll复制到spicy.exe路径下</span><br><span class="line"></span><br><span class="line">* libusb编译选项</span><br></pre></td></tr></table></figure></p>
+</li>
+</ol>
+</li>
+</ol>
+<p>mingw32-configure –enable-usbdk –enable-debug-log<br><code>`</code></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/mingw/" rel="tag"># mingw</a>
+          
+            <a href="/tags/spice/" rel="tag"># spice</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/16/Qt-windows下关闭桌面/" rel="next" title="Qt windows下关闭桌面">
+                <i class="fa fa-chevron-left"></i> Qt windows下关闭桌面
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
           
           </div>
@@ -353,6 +441,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="uyan_frame"></div>
+    
+  </div>
+
 
         </div>
         
@@ -557,6 +651,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
@@ -590,6 +688,10 @@
     
 
     
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2127336"></script>
+      <!-- UY END -->
+    
   
 
 
@@ -604,26 +706,6 @@
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
