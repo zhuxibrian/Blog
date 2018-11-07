@@ -59,7 +59,7 @@ void API_EXPORTED libusb_unref_device(libusb_device *dev)
 为了验证，修改代码如下：
 ```
 // glib: gmem.h
-typedef void            (*GDestroyNotify)       (gpointer       data);
+typedef void            (__stdcall *GDestroyNotify_zx)       (gpointer       data);
 
 #define g_clear_pointer_zx(pp, destroy) \
   G_STMT_START {                                                               \
