@@ -15,7 +15,7 @@ categories: "Git" #文章分類目錄 可以省略
 首先安装github-webhook-handler的中间件，用npm install -g github-webhook-handler来全局安装  
 ```
 var http = require('http')
-var createHandler = require('github-webhook-handler')
+var createHandler = require('/usr/lib/node_modules/github-webhook-handler')
 var handler = createHandler({ path: '/', secret: 'root' })
 // 上面的 secret 保持和 GitHub 后台设置的一致
 
