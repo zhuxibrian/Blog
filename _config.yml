@@ -7,7 +7,7 @@ title: ZhuXi's Blog
 subtitle: 
 description: 生活不只是眼前的苟且,还有诗和远方
 author: ZhuXi
-language: zh-Hans
+language: zh-CN
 timezone:
 avatar: /uploads/headPic.jpg
 
@@ -64,7 +64,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: next-reloaded
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -77,3 +77,11 @@ since: 2017
 # Social links
 social:
   GitHub: https://github.com/zhuxibrian
+
+algolia:
+  applicationID: 'GCAUTTW1RZ'
+  apiKey: 'f7520b2c2e0d09a984264344a730180e'
+  adminApiKey: 'e33fee2c6ba3da69fbef8a60eb889191'
+  indexName: 'zhuxiblog'
+  chunkSize: 5000
+
